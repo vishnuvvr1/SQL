@@ -1,0 +1,35 @@
+select avg(salary) from employee
+
+select * from employee where avg (salary) > 50000
+Group by job   -> AVG FROM TABLE NOT CAM ERREOR
+
+select * from employee order by EMPNAME DESC  -> DESCING ORDER  from employee table empname (reverse)
+select * from employee order by EMPID DESC  -> descing order from employee empid
+select * from employee order by SALARY DESC  -> descing order from employee salary
+select * from employee order by SALARY,EMPNAME DESC  ->  descing order from employee salary and empname
+select * from employee order by EMPID ASC  ->  assing  order from employee empid
+select * from employee order by EMPNAME,SALARY asc  -> assing order from employee salary
+
+select empid,empname from employee group by empid,empname
+select job from employee group by job
+select count (*) , job from employee group by job
+select max(salary), job from Employee
+group by job
+select min(salary), job from Employee
+group by job
+select * from employee
+SELECT *
+FROM employee
+WHERE manager IS NULL;
+SELECT manager, COUNT(*) as employee_count, AVG(salary) as average_salary
+FROM employee
+WHERE manager IS NULL AND salary > 55000
+GROUP BY manager
+select address from employee group by address
+select count (*) from employee -> count of rows
+select MAX(salary) from employee -> max of employee of salary
+select MIN(salary) from employee -> min of employee of salary
+select avg(salary) from employee -> avg of employee of salary
+select sum(salary) from employee -> sum of employee of salary
+select count(*) from employee where salary > 60000 -> count of employee salary > 60000 10 members are there
+select count(empname) from employee where empname LIKE 'A%'   -> like operater A count employee
