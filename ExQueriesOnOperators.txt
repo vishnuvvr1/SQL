@@ -1,0 +1,96 @@
+  1.write query to display all the details of employees who belongs to deptid 10 or 13 and salary > 60000. 
+Ans: SELECT * FROM employee 
+     WHERE (deptid = 10 OR deptid = 13) AND salary > 60000
+
+
+2.write query to display all the details of employees who dont have manager
+
+Ans : SELECT * FROM employee 
+      WHERE manager IS NULL
+
+3.write query to display all the details of employees who is working as developer or tester.
+Ans : SELECT * FROM employee 
+      WHERE job IN ('Developer', 'Tester')
+
+4.write query to display all the details of employees who is working as either developer or manager 
+and salary > 50000 and != to 70000 and deptid either 13, 10, 7.
+Ans: SELECT *
+FROM employee
+WHERE job IN ('Developer', 'Manager')
+  AND salary > 50000
+  AND salary != 70000
+  AND deptid IN (13, 10, 7)
+  
+5.write query to display all the details of employees who is not working as analyst or tester
+Ans :  SELECT *
+FROM employee
+WHERE job NOT IN ('Analyst', 'Tester')
+
+6.write query to display all the details of employees who is not having salary between 60000 and 65000.
+Ans: SELECT *
+FROM employee
+WHERE salary between 60000 AND 65000
+
+7.write query to display all the details of employees whose name ends with n.
+Ans: SELECT *
+FROM employee
+WHERE empname LIKE '%n'
+
+8.write query to display all the details of employees whose name starts with s or ends with n.
+Ans : SELECT *
+FROM employee
+WHERE empname LIKE 's%' OR empname LIKE '%n'
+
+9.write query to display all the details of employees whose name having two A character.
+Ans : SELECT *
+FROM employee
+WHERE empname LIKE '%a%a%'
+
+10.write query to display all the details of employees whose name not ends with Z and salary > 50000 and having manager.
+Ans: SELECT *
+FROM employee
+WHERE empname NOT LIKE '%Z'
+  AND salary > 50000
+  AND manager IS NOT NULL
+  
+11.write query to display all the details of employees who are having son in their names.
+Ans:   SELECT *
+FROM employee
+WHERE empname LIKE '%son%'
+
+12.write query to display all the details of employees who are having O cheractor in second position from end.
+Ans: SELECT * FROM employee
+WHERE empname LIKE '%O_'
+
+
+13.write query to display all the details of employees who is having salary between 50000 and 70000 and whose name having 
+A cheractor or N cheractor
+Ans: SELECT *
+FROM employee
+WHERE salary BETWEEN 50000 AND 70000
+  AND (empname LIKE '%A%' OR empname LIKE '%N%')
+  
+14.write query to display all the details of employees who are having exactly 10 letters in their name.
+ANS:   SELECT * FROM employee
+WHERE empname LIKE '___________'
+
+15.write query to display all the details of employees who are having A cheractor in second position from the start.
+Ans:  SELECT * FROM employee
+WHERE empname LIKE '_A%'
+
+16.write query to display all the details of employees whose name dont start with S cheractor.
+Ans:  SELECT * FROM employee
+WHERE empname  NOT Like 'S%'
+
+17.write query to display all the details of employees except those who are working in deptid 15, 16, 17, 13.
+Ans: select * from employee 
+     where NOT deptid IN (15,16,17,13)
+
+18.write query to display all the details of employees whose salary between 55000 and 75000 and not working as developer.
+ Ans: select * from employee 
+      where salary between 55000 and 75000 and  job != 'developer' 
+ 
+19.write query to display all the details of employees annual salary > 550000 and name starts with M cheractor.
+ Ans:  SELECT *
+FROM employee
+WHERE  (salary*12) > 550000 AND empname LIKE 'M%'

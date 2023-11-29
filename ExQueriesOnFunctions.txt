@@ -1,0 +1,85 @@
+Write a query to display all the employee details whose name length > 6 and their name having A character and also
+should have manager.
+Ans: SELECT *
+FROM employee
+WHERE LEN(empname) > 6 AND empname LIKE '%A%' AND manager IS NOT NULL
+
+2.Write a query to display all the employee names in upper case wose salary > 50000 and job is 
+either analyst or tester or developer or manager
+Ans: SELECT  UPPER(empname) AS upper_case_empname,salary,job
+FROM employee
+WHERE salary > 50000 AND job IN ('analyst', 'tester', 'developer', 'manager')
+
+3.Write a query to display all the employee names in lower case and also display length of their names, jobs whose
+deptid is 13, 15, 3, 7, 9, 10.
+Ans: SELECT
+    LOWER(empname) AS lower_case_empname,
+    LEN(empname) AS name_length,
+    job
+FROM employee
+WHERE deptid IN (13, 15, 3, 7, 9, 10)
+  
+   
+4.Write a query to display all the employee annual salaries, names whose length of jobs > 7 and jobs start with A or D.
+Ans: SELECT
+    salary*12,
+    empname
+FROM employee
+WHERE LEN(job) > 7 AND (job LIKE 'A%' OR job LIKE 'D%')
+
+
+5.select empname,job,LEN(CONCAT(empname,job)) from Employee -> concat and len 
+6.select * from employee where LEN(address) > 5 -> address of employee 
+
+
+-> multi Row examples on function 
+_____________________________________
+(or) group by also called.
+
+7.select count (*) from employee -> count of rows
+8.select MAX(salary) from employee -> max of employee of salary 
+9.select MIN(salary) from employee -> min of employee of salary
+10.select avg(salary) from employee -> avg of employee of salary
+11.select sum(salary) from employee -> sum of employee of salary
+12.select count(*) from employee where salary > 60000 -> count of employee salary > 60000 10 members are there 
+13.select count(empname) from employee where empname LIKE 'A%'   -> like operater A count employee
+
+
+
+
+
+14.select avg(salary) from employee
+select * from employee where avg (salary) > 50000
+Group by job   -> AVG FROM TABLE NOT CAM ERREOR
+15.select * from employee order by EMPNAME DESC  -> DESCING ORDER  from employee table empname (reverse)
+16.select * from employee order by EMPID DESC  -> descing order from employee empid
+18.select * from employee order by SALARY DESC  -> descing order from employee salary
+19.select * from employee order by SALARY,EMPNAME DESC  ->  descing order from employee salary and empname 
+20.select * from employee order by EMPID ASC  ->  assing  order from employee empid
+21.select * from employee order by EMPNAME,SALARY asc  -> assing order from employee salary
+
+GROUP BY 
+________   IN MULTI ROW -->
+
+select job from employee group by job
+select count (*) , job from employee group by job
+select max(salary), job from Employee
+group by job
+select min(salary), job from Employee
+group by job
+select * from employee
+SELECT *
+FROM employee
+WHERE manager IS NULL;
+SELECT manager, COUNT(*) as employee_count, AVG(salary) as average_salary
+FROM employee
+WHERE manager IS NULL AND salary > 55000
+GROUP BY manager
+
+select address from employee group by address
+select empid,empname from employee group by empid,empname
+
+
+
+
+

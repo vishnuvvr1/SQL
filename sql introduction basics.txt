@@ -1,0 +1,119 @@
+sql - structure query lang
+these are five types of the sql query
+1.ddl  -> (data definition lang)
+-> create -> create table 
+   alter-> change the column name
+  rename -> table rename 
+  truncate ->delete data
+  drop-> delete table 
+
+2.dml  -> (data mauplating lang )
+-> insert -> value insert
+   update -> insert values and update 
+   delete -> delete from the table 
+
+3.dtl -> (data translation lang)
+ -> commit
+    savepoint
+   rollback
+4.dcl ->(data control lang)
+_> grant 
+   revoke
+5.dql -> (data query lang)
+->  select -> select means data 
+    from -> in table where the data store
+    where  -> fitching (or) filltring the data
+    group by  -> 
+    having 
+   order by  -> 
+
+
+Aliasing:-
+________
+name is there we can want short cut name we can use the aliasling.
+student
+_______
+id          empname      sala
+             _______      _______
+_______
+1001          vishnu        20000
+10002          saif         3000
+1003           reddy        40000
+  
+  select empname,sal from student;  _>normal query
+  select empname AS "empnam_name", sal AS "salary" from student; -> aliasling query.
+  "emp name" -> space is there we can use the double contation.
+"SalARY" we have upper and lowwer case we can use the double contation.
+
+
+
+Literals.
+_________  
+  where name ='vishnu' -> character Literals. single contation
+  where sal 10000-> number Literals
+  where date = '01-JUNE-2023' date Literals
+  
+  
+  concat
+  _____.
+  concat means two string are combined;
+  select 'hello'||'world' from student.  _> output is helloworld   ||_> this symbol is use to oracle
+  'vishnu'+'reddy'_>reddy __> this symbol is use to squl only.
+  we can number also 1+2  _>12 output
+  
+  
+  Operators
+  _________>
+  Arithmetic Operators
+  ____________________
+  *,+,-,/
+  Retional Operators
+  ____________________
+  <, >, <=,>=,<>-> not equal ,!=,+
+
+  
+  Logical Operators
+  ____________________
+  AND , OR , NOT
+  AND -> both condition are satified then give the output true are false get only one 
+  select * from emp where ename='vishnu' AND salary >75000;
+  OR-> one condition is satified then give the output and both output will be com
+  select * from emp where ename='vishnu' OR salary >75000;
+  NOT->  both condition are false then output will be cam false both contation are true output will be not cam
+  i NOT NULL
+          
+  
+  Special Operators
+  _________
+  between and , is null ,in ,like
+  between-> between to condition select * from where emp='vishnu' OR salary between 60000 and 70000.
+  is null -> where name is null select * from where ename is NULL; manager name is null.
+  in -> in means between condition select * from where ename in ('vishnu','reddy');
+                                                        salary in (60000,70000);
+   like-> like means in charater starting litter 'G%' starting '%G' and '%L--' staring , '--L%' ending   
+   
+   
+   
+   Function in sql
+   _______________ 
+   they are two of the Function 
+   1.multi row this is excuted multi row only in multi row 
+   they are six types are there 
+   (group Function) group by means excuted by group elements only 
+   ->max() 
+   ->min() 
+   ->avg() 
+   ->sum() 
+   ->count() 
+   2. single row
+   ______________ 
+   in single row six types are there sinle row
+   this is excuted single row by row only 
+   ->length(len) 
+   -> show the length of string 
+   ->uppercase -> lowercase are in uppercase 
+   ->lowercase-> uppercase are in lowercase 
+   ->concat-> two string are concat
+   ->initcap-> vishnu is there V has capital reaming are small that is called initcap 
+   ->nested Function-> LEN(upper(lower(hi))) this is possible output is LEN(upper(hi)) LEN(lower(hi)) LEN=2 upper(LEN(vishnu))-> this not possible because len is interger is there these we not possible len(upper(vishnu))-> this is possible ouput is 6
+   

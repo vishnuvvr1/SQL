@@ -1,0 +1,29 @@
+sql - structure query lang
+ssms -> squl server management system.
+these are five types of the sql query
+1.ddl  -> (data definition lang)
+-> create -> create table 
+   alter-> change the column name
+  rename -> table rename 
+  truncate ->delete data
+  drop-> delete table 
+
+2.dml  -> (data mauplating lang )
+-> insert -> value insert
+   update -> insert values and update 
+   delete -> delete from the table 
+
+3.dtl -> (data translation lang)
+ -> commit
+    savepoint
+   rollback
+4.dcl ->(data control lang)
+_> grant 
+   revoke
+5.dql -> (data query lang)
+->  select -> select means data 
+    from -> in table where the data store
+    where
+    group by
+    having 
+   order by

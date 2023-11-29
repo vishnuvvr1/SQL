@@ -1,0 +1,41 @@
+1.write a query to display ename and salary as employeename, sal using aliasing
+Ans:  SELECT empname AS 'employeename', salary AS 'sal' FROM Employee
+
+2. write a query to display job, manager as work , owner using aliasing
+Ans: SELECT 'job' AS work, 'manager' AS owner
+	 FROM Employee
+	 
+3. write a query to display the details of empname, job, salary, dept as 
+'HI <EMP-NAME> YOUR <JOB> YOUR ARE EARNING <SALARY> WORKING IN <DEPTID>'
+Ans: select CONCAT('HI ', empname ,'  YOUR ', job ,' YOUR ARE EARNING ', SALARY, ' WORKING IN DEPTID ', DEPTID) 
+     AS "Details of employees" from Employee
+	 
+4. WRITE  A QUERY TO DISPLAY COLUMN DETAILS AS A MESSAGE LIKE 
+'HI <EMP-NAME> YOUR ADDRESS IS <ADDRESS> YOUR MANAGER IS <MANAGER>'
+Ans: select CONCAT(' HI ', empname ,' YOUR Address is ', address	, ' your manager is ', manager)
+      AS "Details of employees" from Employee
+	  
+5. WRITE A QUERY TO DISPLAY COLUMN DETAILS AS A MESSAGE LIKE 
+'HI <EMP-NAME> YOUR ADDRESS IS <ADDRESS> YOUR MANAGER IS <MANAGER>'
+WHOSE SALARY GREATER THAN 58000.
+Ans: select CONCAT(' HI ', empname ,' YOUR Address is ', address	, ' your manager is ', manager) 
+   AS "Details of employees" from Employee where salary > 58000
+   
+   
+   
+ 6.Ans:-> SELECT (salary * 12)AS "annual salary" from Employee
+ 
+ 
+ 
+ 7. Ans:-> select * from employee where (salary * 12) > 700000
+  
+  8.Ans:-> SELECT * FROM employee where(salary *10 ) > 750000
+  
+  9.Ans-> SELECT salary, (salary+ (salary *0.07)) FROM employee.
+  
+  10.Ans->Alter Table employee Alter column salary int null  -> alter means new column inserted 
+  
+  
+  11.Ans -> select salary*12, ((salary*12)+((salary*12)*0.07)) from employee
+  12.Ans-> select * from employee where ((salary*12)+((salary*12)*0.07)) > 750000
+  
