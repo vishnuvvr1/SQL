@@ -20,7 +20,7 @@ Ans:SELECT job, COUNT(*) AS num_of_employees
    GROUP BY job
 
 4: WAQTD total annual salary needed to pay for all the employees in each job.
-Ans: SELECT job, SUM(salary) AS total_annual_salary
+Ans: SELECT job, SUM(salary * 12) AS total_annual_salary
      FROM employee
      GROUP BY job
 
