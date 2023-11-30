@@ -14,10 +14,10 @@ Ans:SELECT job, COUNT(*) AS num_of_employees
     WHERE UPPER(SUBSTRING(job, 1, 1)) = 'A'
     GROUP BY job
     (or)
-    SELECT job, COUNT(*) AS num_of_employees
-    FROM employee
-    WHERE UPPER(SUBSTRING(job, 1, 1)) = 'a'
-    GROUP BY job
+   SELECT job, COUNT(*) AS employees
+   FROM employee
+   WHERE empname LIKE 'A%' OR empname LIKE 'a%'
+   GROUP BY job
 
 4: WAQTD total annual salary needed to pay for all the employees in each job.
 Ans: SELECT job, SUM(salary) AS total_annual_salary
