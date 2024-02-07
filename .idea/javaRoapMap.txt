@@ -1,0 +1,403 @@
+     RoadMap of JAVA
+     ----------------
+
+    CORE JAVA:
+    -----------
+
+Introduction of java:
+---------------------
+
+Overview of Java
+
+Features of Java
+
+Setting Java Environment
+
+Introduction to JVM
+
+Basics of JAVA:
+
+My First Java Program
+
+Variable in Java
+
+Data type and Identifier
+
+Static and Initializer Block
+
+Type Casting
+
+Conditional Statement
+
+Switch Statement
+
+Loops in Java
+
+Break Continue Statement in Java
+
+Operators in Java
+
+Java Array
+
+Ways to create object in Java
+
+Command line Argument
+
+OOPS Concepts:
+--------------------------------
+
+Objects and Classes
+
+Method in Java
+
+Java is Strictly Pass by Value
+
+Constructor in Java
+
+Java Modifiers
+
+Inheritance
+
+Aggregation
+
+Method Overloading
+
+Method Overriding
+
+Runtime Polymorphism
+
+this keyword
+
+Garbage Collection
+
+Final in Java
+
+Package, SubPackage and Static Import
+
+Abstract class
+
+Interface
+
+Nested Classes
+
+Classes vs. Interface
+
+Wrapper classes
+
+Java String Handling:
+
+Introduction to String
+
+String class functions
+
+StringBuffer class
+
+StringBuilder class
+
+Java Exception Handling:
+-------------------------------------
+
+Introduction to exceptions
+
+Try and catch block
+
+Try with resource statement
+
+Throw, Throws and Finally
+
+User made exception subclass
+
+Method Overloading with exception handling
+
+Chained exceptions
+
+Java multi-threading:
+
+Introduction to Multithreading
+
+Thread Class
+
+Creating a thread
+
+Joining threads
+
+Sleeping Thread in Java
+
+Naming Thread in Java
+
+Thread Priority in Java
+
+Daemon Thread in Java
+
+Synchronization
+
+Interthread Communication
+
+Thread group
+
+JDBC:
+---------------------------------------
+
+	Introduction to JDBC
+
+	SQL Package
+
+	Steps to connect to JDBC
+
+Collection Framework:
+----------------------------------------
+
+Introduction to Collection
+
+Collection Interfaces and Classes
+
+Advanced Topics in Java:
+----------------------------------------
+
+Enumerations
+
+Autoboxing and Unboxing
+
+Serialization and Deserialization
+
+Generics
+
+Spring Framework:
+----------------------------------------
+
+Spring Core:
+==============================
+
+Introduction to Spring
+
+Spring Features
+
+Spring Environment setup
+
+Spring Maven Project
+
+Spring project using IntelliJ IDEA
+
+Spring IOC Container
+
+Annotation and XML Based Configuration
+
+Configuration using Java
+
+Spring Bean and its Lifecycle
+
+Spring Bean Scope
+
+Spring Constructor-Based Dependency
+
+Spring Setter Dependency
+
+Spring Autowiring
+
+	Spring @Qualifier Annotation
+
+	Spring @Qualifier with Constructor
+
+	Spring @Bean Annotation
+
+	Spring Read Property
+
+	Spring Field Injection
+
+Spring Method Injection
+
+Spring JDBC template:
+-----------------------------------------
+
+	jdbcTemplate Example
+
+	Prepared Statement
+
+	Result Statement Extractor
+
+	Row Mapper
+
+	Named Parameter
+
+	Simple JDBC template
+
+Spring ORM:
+-----------------------------------------------
+
+	Spring with ORM
+
+	Spring with Hibernate
+
+	Spring with JPA
+
+Spring Boot:
+----------------------------------------------------
+
+Spring Vs Spring Boot:
+----------------------------------------------------
+
+Spring Boot Version
+
+	Spring vs. Spring Boot
+
+	Spring Boot Architecture
+
+
+
+Spring Boot Basic Concepts:
+-----------------------------------------------
+
+             Spring Initializer
+
+	Spring Boot CLI
+
+	Creating a Spring Boot Project Using IntelliJ IDEA
+
+             Spring Boot Annotations
+
+	Spring Boot Dependency Management
+
+	Spring Boot Application Properties
+
+	Spring Boot Starters
+
+	Spring Boot Starter Parent
+
+	Spring Boot Starter Web
+
+	Spring Data JPA
+
+	Spring Boot Starter Actuator
+
+	Spring Boot Starter Test
+
+	Spring Boot Dev Tools
+
+	Spring Boot Multi-Module Project
+
+	Spring Boot Packaging
+
+	Spring Boot Auto-configuration
+
+Spring Boot Database:
+------------------------------------
+
+             Spring Boot JPA
+
+	Spring Boot JDBC
+
+             Spring Boot JDBC Example
+
+	Spring Boot H2 Database
+
+	Spring Boot CRUD Operations
+
+Spring Boot Advanced:
+-----------------------------------------------
+
+	Spring Boot HATEOAS
+
+	Spring Boot Swagger
+
+	Spring Boot Logging
+
+	Spring Boot Filtering
+
+	Read Spring Configuration
+
+	Spring Boot Global Exception Handling
+
+	Spring Boot Validations
+
+
+
+Spring Security:
+----------------------------------------------
+
+Authentication and Authorization
+
+	Spring Security Introduction
+
+	Basic Example
+
+	Custom Login Form
+
+	Custom Error and Logout User
+
+	Spring Security Handling
+
+	Fetch User Information
+
+	Display User Data
+
+	Spring Security With JDBC
+
+	Configuration using XML
+
+	Custom Access Denied Page
+
+	Role Based Access Control
+
+	Security with JWT
+
+Restful Web Services:
+---------------------------------------
+
+	What are Web Services
+
+	Key Terminology of Web Services
+
+	Characteristics of Web Services
+
+	Architecture of Web Services
+
+	Types of Web Services
+
+	Web Services Components
+
+	SOAP or RESTful Web Services
+
+Spring Boot – RESTful:
+------------------------------------------------
+
+             	Introduction and Initializing RESTful Web Services with spring boot
+
+Spring Boot Auto Configuration and Dispatcher Servlet
+
+	Implementing CRUD operations in RESTful services
+
+             Implementing Validations for RESTful Services
+
+	Implementing HATEOAS for RESTful Services
+
+             Configuring Auto Generation of Swagger Documentation
+
+             Introduction to Swagger Documentation Format
+
+             Monitoring APIs with Spring Boot Actuator
+
+             Implementing Basic Authentication with Spring Security
+
+Connecting RESTful Services to JPA
+
+            	Updating CRUD Operations on User Resource to Use JPA
+
+	Creating Post Entity and Many to One Relationship with User Entity
+
+	RESTful Web Services Best Practice
+
+Debugging in IntelliJ IDEA:
+-----------------------------------------------------------
+
+	What is Debugging, and terminologies used
+
+How to debug a web application or Rest API
+
+Debugging Best Practices.
+
+
+
+
+
+
+
