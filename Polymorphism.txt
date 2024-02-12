@@ -1,0 +1,52 @@
+        Polymorphism
+	-------------
+		
+1. What is Polymorphism ?
+Ans: Polymorphism are "poly" is derived from the Greek word "morphism," which means "many" or "multiple." 
+     Java, polymorphism is achieved through two main mechanisms: 
+	 1.compile-time polymorphism (method overloading) 
+	 2.runtime polymorphism (method overriding).
+	 
+
+2. Explain compile-time polymorphism (method overloading) and runtime polymorphism (method overriding)?
+Ans:   1.compile-time polymorphism (method overloading)
+       -----------------------------------------------
+       Compile-time polymorphism is achieved through method overloading, where multiple methods in the same
+       class share the same name but have different parameter lists.
+	  2.runtime polymorphism (method overriding)
+	 --------------------------------------
+       Runtime polymorphism is achieved through method overriding, where a subclass provides a 
+	   specific implementation for a method that is already defined in its superclass.
+
+
+
+3.Explain Upcasting ?
+Ans: When Parent class reference variable refers to Child class object, it is known as Upcasting. In Java this can be done and is helpful in
+     scenarios where multiple child classes extends one parent class. 
+      In those cases we can create a parent class reference and assign child class objects to it.
+
+
+
+4.Explain difference between Static binding and Dynamic binding in Java ?
+Ans:   Static binding
+	   ---------------
+	   Static binding, also known as early binding, occurs during compile-time. The association between a method call and the method implementation is resolved at 
+       compile-time based on the type of the reference variable.
+	   Dynamic binding
+	   ----------------
+	   Dynamic binding, also known as late binding or runtime polymorphism, occurs during runtime. 
+	   The association between a method call and the method implementation is resolved at runtime based on the actual type of the object.
+	   
+	  
+	  
+5. Can we Override static method? Explain with reasons ?
+Ans: No, we cannot override static method. Because static method is bound to class whereas method overriding is associated with object i.e at runtime.
+
+
+
+
+6.Rules for Method Overriding ?
+Ans: 1. Method name must be same for both parent and child classes.
+     2. Access modifier of child method must not restrictive than parent class method.
+     3. Private, final and static methods cannot be overridden.
+     4. There must be an IS-A relationship between classes (inheritance).
