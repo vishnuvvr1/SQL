@@ -1,0 +1,24 @@
+How to Commit and push a file into github.
+----------------------------------------------------------------------------------
+-> git status (check all the modified files(Red color))
+-> git add . (Use . to add all the modified files)
+git add <file-name>, <file-name> (use this command to add a particuar file)
+-> git status (check all the staged files(green color))
+-> git commit -m "<any commit message>" (-m is used to write a commit message)
+-> git push origin <branch-name>
+
+How to get changes from master branch
+------------------------------------------
+if you are in master branch and you have any local changes then stash your changes and pull the changes from master
+-> git stash save "<stash-message>"
+-> git pull origin <branch-name>(master)
+
+To unstash your changes
+-> git stash pop stash@{0}
+
+If you are in your local sub-branch then checkout to master branch and do the below actions
+-> git pull origin <branch-name>(master)
+
+How to checkout to new branch from master branch
+---------------------------------------------------
+-> git checkout -b <main-branch-name>-<any name>	
