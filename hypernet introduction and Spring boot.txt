@@ -1,0 +1,55 @@
+Hypernet
+------->
+1.orm tool (object relational mapping)
+2.lighter sytnax
+3.both hypernet and jdbc data source commom 
+4.in jdbc more code and more time
+5. in hypernet less code and less time
+
+
+(jdbc =java database conetivicty)
+
+@Entity means table name in database 
+@table table means change the table name
+@component means properities direct read the database
+
+
+
+
+
+Spring boot 
+------------>
+controller    -> (ui)->1.repoonse 2.request
+   !|---> model/pojos class are used
+   service
+   !|
+   repository
+   !|
+   database
+   
+   
+   
+   1.Http
+   2.htts  req/res--> http status code
+ succes-> 200,201,204
+ redirect -> 300,301
+ resource error -> 400,401
+ internal error -> 500,501
+ 
+ endpoints 
+ --------->
+ in http or api endponts are 
+ c -> post calls -> plural -> /users /object /posts
+ r -> get / list ->/users / id
+ u -> put/patch calls -> /name
+ d-> delect calls ->/users / id 
+ 
+ 
+ spring boot 
+ ----------->
+1. Tomcat -> 8080 port number  tomcat is server 
+ 2. data jpa 
+ 3.Lombok  lombok is libary 
+
+ 
+   
